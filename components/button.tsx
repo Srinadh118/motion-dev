@@ -5,9 +5,17 @@ import { motion } from "motion/react";
 const Button = () => {
   return (
     <motion.button
+      initial={{
+        opacity: 0,
+      }}
+      animate={{
+        opacity: 100,
+      }}
       whileHover={{
         rotateX: 25,
         rotateY: 10,
+        boxShadow:
+          "0px 10px 200px 0px rgba(255,230,120,0.5), 0px 20px 40px 0px rgba(255,230,120,0.5)",
         y: -5,
       }}
       transition={{
